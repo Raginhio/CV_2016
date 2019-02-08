@@ -1,0 +1,290 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\nopagenumbers
+\moderncvcolor{orange}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{David}{Ragnarsson}
+\title{CV}                               % optional, remove / comment the line if not wanted
+\address{Munkhagsgatan 94}{587 25 Linköping}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+%\phone[mobile]{073~08~90~207}                   % optional, remove / comment the line if not wanted
+\phone[fixed]{+46 73~08~90~207}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{davidragnarsson93@gmail.com}                  % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Utbildning}
+\cventry{2012--2017}{Civilingenjör, Teknisk Fysik och Elektroteknik}{Luleå Tekniska Universitet}{Luleå}{}{Läst kurser mot elektronik, inbyggda system och reglerteknik. Exjobbet handlade om sensormätningar i varma miljöer och var riktat mot gruvindustrin.}
+
+%Det pågående exjobbet inriktar sig främst mot inbyggda system.}
+
+%Läser sista året av fem, med kurser riktade mot elektronik, inbyggda system och reglerteknik.}  % arguments 3 to 6 can be left empty
+\cventry{2009--2012}{Naturvetenskap}{Wargentinskolan}{Östersund}{}{3 års gymnasieutbildning.}
+
+%\section{Master thesis}
+%\cvitem{title}{\emph{Title}}
+%\cvitem{supervisors}{Supervisors}
+%\cvitem{description}{Short thesis abstract}
+
+\section{Arbetserfarenhet}
+%\subsection{Vocational}
+\cventry{2017-nu}{Mjukvaruutvecklare}{Saab aeronautics}{Linköping}{}{Jobbar för tillfället som mjukvaruutvecklare på Saab inom avdelningen primärdata och navigering. Utvecklar mjukvara i C++ samt Simulink. Har på senare tid tilldelats uppgifter som biträdande csci-manager, vilken bär ansvaret för att mjukvaran utvecklas enligt processen.}
+\cventry{2017}{Forskningsingenjör}{Luleå Tekniska Universitet}{Luleå}{}{En fortsättning på mitt examensarbete som pågick i en månad efter min examen. Arbetet gick ut på att förbereda material för att kunna utföra fler tester.}
+\cventry{2011--2016}{Brevbärare}{Postnord}{Östersund}{}{Jobbat 6 somrar som brevbärare. Sortering och utdelning av post ingick i arbetsuppgiften. \newline{}}%
+%\cventry{2010}{Trädgårdsarbetare}{Svenska kyrkan}{Östersund}{}{Sommaranställning.}
+%\cventry{2009}{Kassör}{Jamtli}{Östersund}{}{Sommaranställning.}
+%Detailed achievements:%
+%\begin{itemize}%
+%\item Achievement 1;
+%\item Achievement 2, with sub-achievements:
+%  \begin{itemize}%
+%  \item Sub-achievement (a);
+%  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+%    \begin{itemize}
+%    \item Sub-sub-achievement i;
+%    \item Sub-sub-achievement ii;
+%    \item Sub-sub-achievement iii;
+%    \end{itemize}
+%  \item Sub-achievement (c);
+%  \end{itemize}
+%\item Achievement 3.
+%\end{itemize}}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
+%\subsection{Miscellaneous}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description}
+
+\section{Kompetenser}
+\cvdoubleitem{}{\textbf{C/C++}}{}{\textbf{Simulink}}
+\cvdoubleitem{}{\textbf{MATLAB}}{}{\textbf{Eagle}}
+\cvdoubleitem{}{\textbf{OrCAD}}{}{\textbf{PSpice}}
+\cvdoubleitem{}{\textbf{Git}}{}{\textbf{}}
+%\cvdoubleitem{}{\textbf{OrCAD}}{}{\textbf{Microsoft Office}}
+
+\section{Språkkunskaper}
+\cvdoubleitem{\textbf{Svenska}}{Modersmål}{\textbf{Tyska}}{Grundläggande}
+\cvdoubleitem{\textbf{Engelska}}{Mycket goda}{}{}
+
+
+%\cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+%\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+
+%\section{Interests}
+%\cvitem{hobby 1}{Description}
+%\cvitem{hobby 2}{Description}
+%\cvitem{hobby 3}{Description}
+
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+
+%\section{Extra 2}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+\section{Referenser}
+\cvitem{}{Referenser lämnas gärna mot begäran.}
+%\end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+%\recipient{HR-Avdelningen}{Toyota Material Handling Sweden AB\\595 24 Mjölby}
+%\recipient{HR-Avdelningen}{WEMATTER\\Datalinjen 3B\\58330 Linköping}
+\recipient{HR-Avdelningen}{DRIV Innovation\\Akademigatan 3\\831 40 Östersund}
+%\recipient{HR-Avdelningen}{Motion Control\\Ängsgärdsgatan 10\\721 30 Västerås}
+%\recipient{HR-Avdelningen}{ÅF\\Hamntorget 3\\652 26 Karlstad}
+%\recipient{HR-Avdelningen}{Semcon\\Lindholmsallén 2\\417 55 Göteborg}
+%\recipient{HR-Avdelningen}{ÅF\\Grafiska vägen 2\\401 51 Göteborg}
+%\recipient{HR-Avdelningen}{i3tex\\Nygatan 35\\582 19 Linköping}
+%\recipient{HR-Avdelningen}{Saab AB\\Bröderna Ugglas gata\\582 54 Linköping}
+%\recipient{Luleå tekniska universitet}{}
+%\recipient{HR-Avdelningen}{Shortlink AB\\Hamntorget 1\\652 26 Karlstad}
+%\recipient{HR-Avdelningen}{Autoliv Sverige AB\\Teknikringen 9\\583 30 Linköping}
+\date{\today}
+\opening{Ubildad ingenjör som söker jobb hos DRIV Innovation i Östersund.}
+%\opening{Snart färdigutbildad ingenjör söker jobb som algoritmutvecklare hos Autoliv i Linköping.}
+\closing{Vänliga hälsningar,}
+\enclosure[Bifogat]{CV, Betygsutdrag}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+% Doktorand tjänst - Luleå
+%Jag blev tipsad av Jonny Johansson att söka den här tjänsten, som också är min handledare för mitt examensarbete. Jag tycker att båda de kurskedjor som jag har läst har varit intressanta, dvs elektronik, sen mikrodator och reglerteknik. Hoppas att man kan få tjänsten att passa bra utifrån dessa kunskaper, där jag gärna sätter mig in i IoT.
+
+%Jag fick syn på eran verksamhet via er hemsida, och undrar därför om det finns möjlighet att få sommarjobb hos er. Jag tycker att eran utveckling av vattenturbiner låter intressant eftersom jag tycker att reglering är ett inspirerande ämne. Jag är uppvuxen utanför Östersund, och skulle kunna tänka mig att flytta tillbaka efter mina studier. Ett arbete hos er skulle innebära att jag både får jobba med det jag är intresserad av, samtidigt som jag hinner träffa min familj under sommaren.
+
+%I min nuvarande utbildning till Civilingenjör inom teknisk fysik och elektroteknik så läser jag kurskedjor mot elektronik, reglering och mikrodator, vilket jag trivs bra med då mitt intresse för reglering och elektronik ökar i takt med att jag kommer längre in i utbildningen. Om jag skulle få jobba hos er hoppas jag kunna avlasta eran arbetsbelastning under sommaren, och samla på mig värdefulla erfarenheter. Samtidigt som jag hoppas att jag kan använda mig av de kunskaper jag samlat på mig inom främst reglering.
+
+%Via er hemsida fick jag syn på att Ni söker sommarjobbare på avdelningen Research \& Development i sommar. Jag blev direkt intresserad då jag såg möjligheten att få jobba med utveckling på ett väletablerat och intressant företag. Samtidigt som ett arbete hos er skulle stämma väl överens med den utbildning jag läser på Luleå Tekniska Universitet, och på så vis samla på mig erfarenheter.
+
+%I mina studier till civilingenjör inom teknisk fysik och elektroteknik har jag samlat på mig mycket kunskap inom elektronik och reglering. Det har också lett till att motivationen att lära sig mer inom dessa områden ökar i takt med utbildningen. Därför hoppas jag även kunna dra nytta av dessa kunskaper vid ett eventuellt jobb hos er. Jag har god vana i att samarbeta och jobba i grupp, då grupparbeten är en stor del av utbildningen. Tidigare somrar har jag jobbat på posten som stadsbrevbärare, vilket har varit givande för att lära sig att hantera stress och jobba självständigt.
+
+%Jag fick syn på eran verksamhet under arbetsmarknadsmässan LARV på Luleå Tekniska Universitet. Jag tycker att ni är ett intressant företag och tycker att det vore kul att jobba hos er. Jag är uppvuxen utanför Östersund, och skulle kunna tänka mig att flytta tillbaka efter mina studier. Ett arbete hos er skulle innebära att jag både får jobba med det jag är intresserad av, samtidigt som jag hinner träffa min familj under sommaren.
+
+%I min nuvarande utbildning till Civilingenjör inom teknisk fysik och elektroteknik så läser jag kurskedjor mot elektronik, reglering och mikrodator, vilket jag trivs bra med då mitt intresse för reglering och elektronik ökar i takt med att jag kommer längre in i utbildningen. Om jag skulle få jobba hos er hoppas jag kunna avlasta eran arbetsbelastning under sommaren, och samla på mig värdefulla erfarenheter. Samtidigt som jag hoppas att jag kan använda mig av de kunskaper jag samlat på mig inom främst elektronik eller reglering. Tidigare somrar har jag jobbat på posten som stadsbrevbärare, vilket har varit givande för att lära sig att hantera stress och jobba självständigt. Eftersom jag tycker om att röra på mig så har det även varit ett bra arbete där jag fått chansen röra på mig under arbetstid.
+
+%Gemensamt med Fredder
+%Via annonstoget på LTU's hemsida fick vi syn på eran annons om examensarbete inom fuktmätning. Eftersom vi båda tycker det är intressant att designa elektronik såg vi det som ett spännande examensarbete och ett bra tillfälle att nyttja de kunskaper vi samlat på oss under studietiden. Ett examensarbete hos er skulle innebära att vi får arbeta med det vi är intresserad av och vill utvecklas mer inom, i en bransch där ingen av oss har någon större erfarenhet. Vilket ses som en spännande utmaning.
+
+%Båda har liknande utbildningar med fördjupningar inom elektronik, inbyggda system och reglering.
+
+%Via ett mindre projektarbete inom ekonomi kom jag eran verksamhet lite närmare. Fast det var denna gången hos Scania Ferruform i Luleå. Jag fastnade lite för eran verksamhet redan då och efter att kolla igenom eran hemsida bland alla examensarbeten ni söker var det ett som stack ut. Att hitta en optimal speedcontroller bland trafiksignaler känns inspirerande. Mycket på grund av att jag tidigare har stött på just MPC (Model predictive controller).
+
+%Toyota
+%Första gången jag kom i kontakt med ert företag var på företagsdagen under LARV(LuleåARbetsmarknadsVecka) på LTU. Det ledde till att jag fick upp ögonen för er och därför haft koll på era förslag på examensarbeten. Främst så söker jag ett examensarbete inom elektronik, inbyggda system och/eller reglerteknik. Därför fastnade jag för ert examensarbete inom optimerad hydraulikstyrning. Där skulle jag få tillfälle att nyttja och bredda mina kunskaper inom ett intressant område.
+
+%Wematter
+%Jag såg eran annons där ni söker en mjukvaruutvecklare med hårdvarukoll och börja direkt fundera. Eftersom annonsen stämde bra in på min utbildning och att 3D-skrivare är ett intressant område, undrar jag om det finns möjlighet att göra ett examensarbete hos er som kräver liknande kompetens. Jag har tänkt att göra mitt examensarbete till våren och söker ett inom elektronik, inbyggda system och/eller reglerteknik. Det skulle därför vara intressant att få göra inom något av dessa områden på ert företag, då jag hoppas få tillfälle att nyttja and bredda mina kunskaper inom ett intressant område.
+
+%Semcon - Göteborg
+%Via er hemsida såg jag eran annons där ni söker en HW-utvecklare med intresse för mjukvara. Eftersom att annonsen stämmer bra in på min utbildning och fyller de områden som jag vill jobba med fick jag upp intresset. Sen vill jag givetvis fortsätta att utveckla mina kunskaper och tror att en konsultfirma är ett bra ställa att göra det på. Just för att få möjligheten att ständigt möta nya utmaningar som kräver unika lösningar, vilket också gör att Semcon känns extra intressant.
+
+
+
+%På dom kurser som har varit inriktade mot reglerteknik har alla beräkningar och simuleringar som utförts på laborationer implementerats i Matlab och Simulink. När jag har jobbat med inbyggda system har jag arbetat med en ARM Cortex-M4 som suttit i ett STM32 chip, samt en av Microchips PIC18 processorer. Programmering har i dessa fall gjorts i C. Elektroniken har jag designat i Eagle, där jag har ritat 2 och 4-lagers mönsterkort. Eftersom laborationer i grupp har varit återkommande under hela min utbildning har jag byggt upp en god förmåga att samarbeta, kommunicera och jobba i grupp. I höstas samt under den pågående läsperioden har jag varit handledare för kurserna elektronik 1 och fortsättningskursen elektronik 2, vilket har varit både kul och en utmaning i att bidra till elevernas lärande. Det har även varit en bra källa till repetition och uppfräschning av gamla kunskaper.
+
+%ÅF - Göteborg
+%Via er hemsida såg jag eran annons där ni söker en HW-utvecklare. Eftersom att annonsen stämmer bra in på min utbildning och fyller de områden som jag vill jobba med fick jag upp intresset. Sen vill jag givetvis fortsätta att utveckla mina kunskaper och tror att en konsultfirma är ett bra ställa att göra det på. Just för att få möjligheten att ständigt möta nya utmaningar som kräver unika lösningar, vilket också gör att ÅF känns extra intressant.
+
+%Shortlink - Karlstad
+%Med över tjugo års erfarenhet av elektronikutveckling i bagaget hoppas jag att man ändå besitter viljan att anställa juniora kollegor. Hos er hoppas jag kunna utvecklas och bli en del bland kunniga kollegor för att samtidigt bidra med nytänkande och de kunskaper jag samlat på mig under utbildningen. Det som gör ert företag extra intressant, är att ni går hela vägen från mjukvara ner till att designa egna IC-kretsar.
+
+
+
+%Wematter - Linköping JOBB
+%Första gången jag kom i kontakt med er var i höstas med jag fortfarande sökte examensarbete. Fick som svar att det var mycket att göra i början på året och att jag tidigast kunde få börja 1 April. Det blev inget av det då men jag hoppas att inte broarna är brända för det. 
+
+%% DRIV Innovation - Östersund
+En vakant tjänst på eran hemsida som Elektroingenjör fångade mitt intresse. Att få vara med och bidra till att göra industrin inom Jämtland konkurrenskraftig känns inspirerande. Därför skulle jag gärna vilja veta mer om er och vad ni söker för att kunna se om jag eventuellt kan passa in hos er.
+
+
+%SAAB - Linköping
+%Att få vara med och utveckla nästa generations Gripen låter minst sagt inspirerande. Sen vill jag givetvis fortsätta att utveckla mina kunskaper och tror att ett stort företag som Saab med mycket erfarenhet är en bra miljö att göra just det i. 
+
+
+%Sen tror jag också att ett stort företag med mycket erfarenhet och kompetens är en bra miljö att arbeta i för att fortsätta utveckla sina kunskaper och förhoppningsvis kunna dela med sig av dem man samlat på sig hittills.
+
+
+%Autoliv - Linköping
+%Via er hemsida fick jag syn på eran annons där ni söker en algoritmutvecklare. Eftersom annonsen stämmer bra in på min utbildning och fyller de områden jag vill jobba med fick jag upp intresset och hoppas få möjligheten att rädda liv i trafiken. Förutom att självkörande bilar är intressant, gillar jag att man är med i hela tillverkningsprocessen från hårdvara till mjukvara. Jag vill givetvis fortsätta att utveckla mina kunskaper och tror att det görs bäst om man samtidigt har kul på jobbet.
+
+
+%Tiden på universitet har gett mig ett ökat intresse för inbyggda system och reglerteknik. När jag har jobbat mot inbyggda system har jag fått designa både egen hårdvara och mjukvara, som jag programmerat i C. De tillverkare av mikroprocessorer jag har erfarenhet av är STMicroelectronics och Microchip. I kurserna som har varit riktade mot reglerteknik har jag fått lära mig att bland annat balansera en miniseg, styra en lyftkran och i alla labbar har Matlab och Simulink använts flitigt. I höstas samt under den pågående läsperioden har jag varit labbhandledare för de analoga elektronikkurserna elektronik 1 och fortsättningskursen elektronik 2, vilket har varit både kul och en utmaning i att bidra till elevernas lärande. Det har även varit en bra källa till repetition och uppfräschning av gamla kunskaper.
+
+
+%i3tex - Linköping
+%Via er hemsida såg jag eran annons där ni söker en Elektronikkonstruktör. Eftersom att annonsen stämmer bra in på min utbildning och fyller de områden som jag vill jobba med fick jag upp intresset. Jag vill givetvis fortsätta att utveckla mina kunskaper och tror att en konsultfirma är ett bra ställe att göra det på. Sen gillar jag att ni uppmuntrar framsteg och har kul på jobbet, vilket också gör att i3tex känns extra intressant.
+
+
+Tiden på universitet har gett mig ett ökat intresse för inbyggda system och elektronik. Kombinationen att både få programmera och designa samma elektronik är något jag blir triggad av, men tycker att båda områdena är roliga att jobba med separat. Under mitt examensarbete fick jag designa samt programmera elektroniken till en lambdasensor som skulle klara av att mäta syrehalten i ugnar som kan bli upp till 1200$^\circ C$ varma. Elektroniken befann sig hela tiden inuti ugnen och klarade värmen genom att omslutas av kokande vatten.
+
+I mitt nuvarande arbete som mjukvaruutvecklare jobbar vi i team, där vi utvecklar mjukvara till flygplanet Gripen E. Att jobba i team är något som jag tycker är utvecklade då det är ett bra sätt att sprida och ta till vara på varandras kunskaper. Samtidigt har jag fått lära mig vilka svårigheter det kan finnas med att bygga flygsäker mjukvara som uppfyller systemkraven.
+
+
+%Tiden på universitet har gett mig ett ökat intresse för inbyggda system och elektronik. Kombinationen att både få programmera och designa samma elektronik är något jag blir triggad av, men tycker att båda områdena är roliga att jobba med separat. De tillverkare av mikroprocessorer jag har erfarenhet av är STMicroelectronics och Microchip, vilka jag har programmerat i C. När jag har designat mönsterkort så har det gjorts i Eagle och all simulering av analog elektronik har jag gjort i OrCAD och PSpice. Under det pågående läsåret har jag varit labbhandledare för de analoga elektronikkurserna elektronik 1 och fortsättningskursen elektronik 2, vilket har varit både kul och en utmaning i att bidra till elevernas lärande. Det har även varit en bra källa till repetition och uppfräschning av gamla kunskaper.
+
+
+%ÅF - Karlstad
+%Jag såg eran annons där ni söker en mjukvaruutvecklare inom inbyggda system. Eftersom att annonsen stämmer bra in på min utbildning och fyller de områden som jag vill jobba med fick jag upp intresset. Sen jag vill givetvis fortsätta att utveckla mina kunskaper och tror att en konsultfirma så som ÅF är en bra plats att göra det på. Just för att få möjligheten att ständigt möta nya utmaningar som kräver unika lösningar.
+
+%Under tiden som jag har studerat på universitet har jag fått ett ökat intresse för reglerteknik och inbyggda system. På dom kurser som har varit inriktade mot reglerteknik har alla beräkningar och simuleringar som utförts på laborationer implementerats i Matlab och Simulink. När jag har jobbat med inbyggda system har jag arbetat med en ARM Cortex-M4 som suttit i ett STM32 chip, samt en av Microchips PIC18 processorer. Programmering har i dessa fall gjorts i C. Elektroniken har jag designat i Eagle, där jag har ritat 2 och 4-lagers mönsterkort. Eftersom laborationer i grupp har varit återkommande under hela min utbildning har jag byggt upp en god förmåga att samarbeta, kommunicera och jobba i grupp. I höstas samt under den pågående läsperioden har jag varit handledare för kurserna elektronik 1 och fortsättningskursen elektronik 2, vilket har varit både kul och en utmaning i att bidra till elevernas lärande. Det har även varit en bra källa till repetition och uppfräschning av gamla kunskaper.
+
+%Motion control
+%Jag hittade era annonser om examensarbeten efter att en studiekamrat nämnde er som ett intressant företag. Då såg jag erat examensarbete som handlar om positionsmätningsenhet med hjälp av MEMS-sensorer, vilket såg väldigt lämpligt ut för min utbildning. Jag söker främst examensarbeten inom elektronik, inbyggda system och/eller reglerteknik och ser därför detta som ett spännande uppdrag och hoppas få tillfälla att nyttja och bredda mina kunskaper inom ett intressant område.
+
+
+%där ni söker en mjukvaruutvecklare med hårdvarukoll och börja direkt fundera. Eftersom annonsen stämde bra in på min utbildning och att 3D-skrivare är ett intressant område, undrar jag om det finns möjlighet att göra ett examensarbete hos er som kräver liknande kompetens. Jag har tänkt att göra mitt examensarbete till våren och söker ett inom elektronik, inbyggda system och/eller reglerteknik. Det skulle därför vara intressant att få göra inom något av dessa områden på ert företag, då jag hoppas få tillfälle att nyttja and bredda mina kunskaper inom ett intressant område.
+
+
+%Toyota
+%Under tiden som jag har studerat på universitet har jag fått ett större intresse för reglerteknik och inbyggda system. 
+
+%Alla kurser inom området reglerteknik har innehållit många laborationer, där en stor del har varit att implementera beräkningar och simuleringar i Matlab och Simulink. Eftersom laborationer i grupp har varit återkommande under hela min utbildning har jag byggt upp en god förmåga att samarbeta, kommunicera och jobba i grupp. Under den precis påbörjade läsperioden kommer jag att vara labbhandledare i elektronik. Det är något jag ser fram emot och tar som en utmaning i att bidra till elevernas lärande. Tiden som brevbärare har jag ansvarat för sortering och utdelning av post inom ett visst område, vilket har inneburit självständigt arbete och ansvarstagande.
+%alternativt kommentera programmeringsbakgrund, ev. vag C erfarenhet / implementering av embedded systems%
+
+%Wematter
+%Under tiden som jag har studerat på universitet har jag fått ett ökat intresse for reglerteknik och inbyggda system. På dom kurser som har varit inriktade mot reglerteknik har alla beräkningar och simuleringar som utförts på laborationer implementerats i Matlab och Simulink. När jag har jobbat med inbyggda system har jag arbetat med en ARM Cortex-M4 som suttit i ett STM32 chip, som jag har programmerat i C. Eftersom laborationer i grupp har varit återkommande under hela min utbildning har jag byggt upp en god förmåga att samarbeta, kommunicera och jobba i grupp. Under den precis påbörjade läsperioden kommer jag att vara labbhandledare i elektronik. Det är något jag ser fram emot och tar som en utmaning i att bidra till elevernas lärande. Tiden som brevbärare har jag ansvarat för sortering och utdelning av post inom ett visst område, vilket har inneburit självständigt arbete och ansvarstagande.
+
+
+%Motion control
+%Under tiden som jag har studerat på universitet har jag fått ett ökat intresse för reglerteknik och inbyggda system. När jag har jobbat med inbyggda system har jag designat kretskort bestående av 2 lager, där jag har programmerat microprocessorn i C. Eftersom laborationer i grupp har varit återkommande under hela min utbildning har jag byggt upp en god förmåga att samarbeta, kommunicera och jobba i grupp. Under den pågående läsperioden är jag labbhandledare i elektronik. Det är något jag sett fram emot och tagit som en utmaning i att bidra till elevernas lärande. Tiden som brevbärare har jag ansvarat för sortering och utdelning av post inom ett visst område, vilket har inneburit självständigt arbete och ansvarstagande.
+
+
+%Toyota
+Jag är uppväxt på en mindre gård utanför Brunflo, där jag ofta har varit delaktig i utomhussysslor vilket har ökat mitt intresse för att lösa praktiska problem och att vara ute i naturen. Idrott har alltid varit en del av mitt liv, där jag har utövat både lagsporter som fotboll och innebandy. Men de senare åren har det blivit mer fokus på individuella sporter såsom löpning och längdskidor. Detta har lett till att jag ofta har kämpat mot olika mål både individuellt och i grupp.
+
+%Jag söker det här examensarbetet tillsammans med Mattias Wallin. Vi har jobbat tillsammans i tidigare projekt och det har alltid funkat bra, då jag anser att vi båda är väldigt målinriktade.
+
+%I grew up on a small farm on the country side, where I often helped my family take care of the farm on my spare time. This period of my life increased my interest for machines and being out in the nature. Sports have also been a big part of my life, where I have practising both team sports like floorball, football and more lately individual sports as running and cross-country skiing. This have led me to strive against different goals, both as a team and individually.
+
+
+
+Tack för att ni har läst min ansökan. Ser fram emot att få höra mer från er och lämnar gärna ut referenser mot begäran.
+
+%Jag skulle se fram emot att jobba hos er och lämnar gärna ut referenser mot begäran.
+
+\makeletterclosing
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
